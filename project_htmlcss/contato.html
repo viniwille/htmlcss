@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/martelo.ico" type="image/x-icon">
+        <title>Hammer | Contato</title>
+    </head>
+    <body>
+        <header>
+            <div class="menu_superior">
+                <div>
+                    <img src="img/logo_orange_fixed.png" alt="Logo Hammer" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><strong>Hammer</strong></a></li>
+                        <li><a href="servicos.html"><strong>Serviços</strong></a></li>
+                        <li><a href="clientes.html"><strong>Nossos Clientes</strong></a></li>
+                        <li><a href="contato.html"><strong>Contato</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="fundo_contato"></div> <!-- container para colocar a imagem de fundo com as CSS -->
+        </header>
+        <main>
+            <div class="titles_pages">
+                <h1>NOSSOS CONTATOS</h1>
+                <p>Entre em contato para mais informações e orçamentos!</p>
+            </div>
+            <!-- criando um formulário de contato, utilizando o formsubmit (para funcionar é necessário rodar em algum servidor, como o Live Server. Irá enviar para o meu e-mail pessoal, que está protegido com aquele código após o formsubmit.co/código) -->
+            <div class="contact_infos">
+                <div class="contact_form">
+                    <h2>Nos envie uma mensagem!</h2>
+                    <form action="https://formsubmit.co/494e91bc24b76bcab6fda0346ea23b8b" method="POST">
+                        <input type="name" name="name" placeholder="Digite o seu nome" required>
+                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <textarea type="text" name="message" placeholder="Digite a mensagem" required></textarea>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <!-- Bloco ao lado do formulário com imagens e os contatos -->
+                <div class="contact_others">
+                    <div class="contact_items">
+                        <img src="img/contato/wpp.png" alt="simbolo telefone">
+                        <div>
+                            <h3>Telefone/Whatsapp</h3>
+                            <p>(47) 0000-0000</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <img src="img/contato/email.png" alt="simbolo e-mail">
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@hammer.fic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="inferior">
+                <ul>
+                    <li><a href="index.html">Hammer</a></li>
+                    <li><a href="contato.html">Entre em contato</a></li>
+                </ul>
+                <p>Hammer Co. Development: Vinícius Wille Alves</p>
+            </div>
+        </footer>
+    </body>
+</html>

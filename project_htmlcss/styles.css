@@ -1,0 +1,416 @@
+/* 
+Paleta de Cores:
+#E39444
+#FB7E00
+#DE6F00
+#AB5500
+#5E3D1C
+*/
+
+/* INÍCIO CONFIGURAÇÕES PARA TODO O SITE */
+/* removendo as margens do html */
+html {
+    margin: 0;
+}
+/* removendo margens do body e padrozinando a fonte */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* INÍCIO MENU DE NAVEGAÇÃO SUPERIOR */
+/* configurações gerais do header */
+header {
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.082);
+}
+/* configurando os items do header */
+.menu_superior {
+    margin: 0 15em;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/* configurando a logo da header */
+.logo {
+    width: 30ex;
+    padding: 1rem;
+}
+/* removendo o padding padrão das ul e os pontos */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+/* configurando display inline para o menu superior */
+.menu_superior ul li {
+    display: inline;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+nav a, footer a {
+    text-decoration: none;
+    color: black;
+}
+/* definindo mudança de cores no header e footer nos links */
+nav a:hover, footer a:hover {
+    color: #5E3D1C;
+}
+/* FIM MENU DE NAVEGAÇÃO SUPERIOR */
+
+/* INÍCIO MENU DE NAVEGAÇÃO INFERIOR */
+/* configurações básicas do menu inferior */
+.inferior {
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.082);
+    padding: 1rem 0em;
+    text-align: center;
+}
+
+.inferior ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.inferior ul li {
+    padding: 0 1.5ex;
+}
+
+.inferior p {
+    font-size: 1.4ex;
+    text-align: center;
+}
+/* FIM MENU DE NAVEGAÇÃO SUPERIOR */
+
+/* centralizando na página todos os itens contidos na tag main */
+main {
+    margin: 0 15em;
+}
+/* FIM CONFIGURAÇÕES PARA TODO O SITE */
+
+/* INÍCIO PÁGINA INDEX */
+/* definindo imagem de fundo (da mesma forma para todas as páginas) */
+.fundo_index {
+    width: 100%;
+    height: 60ex;
+    background-image: url(img/index/fundo_index.jpg);
+    background-size: cover;
+    background-position: 100% 10%;
+}
+
+.promotion a {
+    text-decoration: none;
+    color: #AB5500;
+}
+
+.promotion a:hover {
+    text-decoration: underline;
+    color: #5E3D1C;
+}
+
+.promotion img {
+    width: 65%;
+}
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #DE6F00;
+    padding-top: 3em;
+}
+/* deixando o título ao lado da promoção alinhado a direita */
+.promotion h1 {
+    text-align: right;
+}
+/* alterando a cor do texto em destaque */
+.promotion span {
+    color: #AB5500;
+    font-weight: 900;
+}
+/* alterando todo o bloco de principais serviços */
+.aboutus {
+    margin: 2em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB7E00;
+    border-radius: 1ex;
+    padding-top: 6ex;
+    /* quebrando levemente a parte superior do bloco */
+    clip-path: polygon(
+        0 20%, /* left top */
+        100% 0, /* right top */ 
+        100% 100%, /* right bottom */
+        0 100%); /* left bottom */
+}
+
+.aboutus_general {
+    height: min-content;
+    width: 15em;
+    margin: 1em;
+    background-color: white;
+    font-size: 2.5ex;
+    box-shadow: 5px 5px 1px 3px #5E3D1C;
+    text-align: center;
+    padding: 1ex;
+    border-radius: 2ex;
+}
+/* alterando o tamanho as imagens do bloco */
+.aboutus_services img {
+    width: 8ex;
+    height: 8ex;
+    margin-right: 2ex;
+}
+/* configurações gerais com flexbox das imagens e textos */
+.aboutus_services {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: min-content;
+    width: 30em;
+    margin: 1em;
+    background-color: #AB5500;
+    color: white;
+    font-size: 2ex;
+    box-shadow: 5px 5px 1px 3px #5E3D1C;
+    border-radius: 2ex;
+    text-align: left;
+    padding: 1ex;
+}
+/* removendo margin do título para alinhar melhor */
+.service h3 {
+    margin: 0;
+}
+
+.service {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 2ex;
+}
+
+.service a {
+    text-decoration: none;
+    color: black;
+}
+
+.service a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* FIM PÁGINA HOME */
+
+/* INÍCIO PÁGINA DE SERVIÇOS */
+.fundo_services {
+    width: 100%;
+    height: 60ex;
+    background-image: url(img/services/fundo_services.jpg);
+    background-size: cover;
+    background-position: 100% 50%;
+}
+/* configurando com flexbox a exibição da página */
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Alterando o título e subtítulo das páginas */
+.titles_pages h1 {
+    margin: 2ex 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4ex;
+    color: #DE6F00;
+}
+
+.titles_pages p {
+    text-align: center;
+    font-size: 2.5ex;
+}
+
+/* Alterando as tags de links da página de serviços e clientes */
+section a, .client a {
+    text-decoration: none;
+    color: #DE6F00;
+    font-weight: bold;
+}
+
+/* Decorando as tags de links da página de serviços e clientes */
+section a:hover, .client a:hover {
+    text-decoration: underline;
+    color: #5E3D1C;
+}
+
+.allservices {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 2ex;
+}
+
+.allservices ul li {
+    padding-bottom: 1ex;
+    font-size: 1.1rem;
+}
+
+.service_general {
+    margin-left: 3ex;
+}
+
+section strong {
+    color: #AB5500;
+}
+/* FIM PÁGINA DE SERVIÇOS */
+
+/*INÍCIO PÁGINA DE CLIENTES */
+.fundo_clients {
+    width: 100%;
+    height: 60ex;
+    background-image: url(img/clientes/fundo.jpg);
+    background-size: cover;
+    background-position: 100% 20%;
+}
+/* definindo exibição em coluna */
+.clients_info {
+    margin-top: 8ex;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.client p {
+    font-size: large;
+    padding-left: 10ex;
+}
+/* definição dos blocos de imagem e texto em linha */
+.client {
+    margin-bottom: 5ex;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+/*FIM PÁGINA DE CLIENTES */
+
+/*INÍCIO PÁGINA DE CONTATO */
+.fundo_contato {
+    width: 100%;
+    height: 60ex;
+    background-image: url(img/contato/fundo_contato.jpg);
+    background-size: cover;
+    background-position: 150% 20%;
+}
+/* estilizando o bloco que engloba o formulário e o email e telefone*/
+.contact_infos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB7E00;
+    border-radius: 1ex;
+    padding-top: 6ex;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.233);
+    /* quebrando levemente a parte superior da caixa*/
+    clip-path: polygon(
+        0 0, /* left top */
+        100% 20%, /* right top */ 
+        100% 100%, /* right bottom */
+        0 100%); /* left bottom */
+    margin-bottom: 3ex;
+}
+/* Aplicando estilos no formulário */
+.contact_form {
+    height: min-content;
+    width: 15em;
+    margin: 1em;
+    background-color: white;
+    font-size: 2.5ex;
+    box-shadow: 5px 5px 1px 3px #5E3D1C;
+    text-align: center;
+    padding: 1ex;
+    border-radius: 2ex;
+}
+/* deixando o formulário em coluna */
+.contact_form form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* alterando os inputs */
+.contact_form input {
+    margin-bottom: 2ex;
+    width: 45ex;
+    height: 3ex;
+    border-radius: 0.5ex;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.342)
+}
+/* personalizando área de texto do formulário */
+.contact_form textarea {
+    resize: none;
+    width: 100%;
+    height: 12ex;
+    border-radius: 0.5ex;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.342)
+}
+/* alterando o botão de enviar */
+.contact_form button {
+    margin-top: 1ex;
+    padding: 1.5ex;
+    width: 20ex;
+    background-color: #DE6F00;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.233);
+    border-style: none;
+    border-radius: 1ex;
+}
+
+.contact_form button:hover {
+    background-color: #AB5500;
+}
+/* Fim do formulário */
+
+.contact_others img {
+    width: 4ex;
+    height: 4ex;
+    margin-right: 2ex;
+}
+/* alterando a disposição dos elementos do bloco de whatsapp e email */
+.contact_others {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: min-content;
+    width: 30em;
+    margin: 1em;
+    background-color: #AB5500;
+    color: white;
+    font-size: 2ex;
+    box-shadow: 5px 5px 1px 3px #5E3D1C;
+    border-radius: 2ex;
+    text-align: left;
+    padding: 4ex;
+}
+
+.contact_items h3, .contact_items p {
+    margin: 0;
+}
+
+.contact_items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-left: 1ex;
+}
+/*FIM PÁGINA DE CONTATO */
